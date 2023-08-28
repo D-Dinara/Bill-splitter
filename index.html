@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Splitter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="container">
+        <div class="header">
+            <h1>Bill Splitter</h1>
+        </div>
+        <form>
+            <div class="inputField"> 
+                <label>Bill amount</label>
+                <span>$</span>
+                <input type="text" id="bill" placeholder="Enter the bill amount">
+            </div>
+
+            <div class="inputField"> 
+                <label>Number of people</label>
+                <input type="text" id="people" placeholder="How many people?"> 
+            </div>
+            
+            <div class="inputField"> 
+                <label>Add a tip</label>
+                <span>%</span>
+                <input type="text" id="tipPercent" placeholder="Enter your tip in %">
+            </div>
+            <div class="discountField">
+                <button id="addDiscount">Do you have a discount card?</button>
+                <select class="discount">
+                    <option disabled>Select a discount</option>
+                    <option selected value="0.00">I do not have a discount card</option>
+                    <option value="0.05">I have a 5% discount</option>
+                    <option value="0.10">I have a 10% discount</option>
+                    <option value="0.20">I have a 20% discount</option>
+                </select>
+            </div>
+
+            <button id="btn">Split</button>
+        </form>
+
+        <div id="showTotalAmountToPay">
+                <div id="billSplit" class="amountBlock">
+                    <p>Bill</p>
+                    <span class="currency">$</span>
+                    <span id="dividedBill" class="dividedSum">____</span>
+                    <span>per person</span>
+                </div>
+
+                <div id="Discount" class="amountBlock">
+                    <p>Discount</p>
+                    <span class="currency">$</span>
+                    <span id="dividedDiscount" class="dividedSum">____</span>
+                    <span>per person</span>
+                </div>
+
+                <div id="totalTip" class="amountBlock">
+                    <p>Tip</p>
+                    <span class="currency">$</span>
+                    <span id="dividedTip" class="dividedSum">____</span>
+                    <span>per person</span>
+                </div>
+
+                <div id="totalAmount" class="amountBlock">
+                    <p>Total amount to pay is </p>
+                    <span class="currency">$</span>
+                    <span id="billAndTip" class="dividedSum">____</span>
+                    <span>per person</span>
+                </div>
+        </div>
+    </div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</body>
+</html>

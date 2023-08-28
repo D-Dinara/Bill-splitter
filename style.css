@@ -1,0 +1,212 @@
+body {
+    background-color:#F0EBE3;
+}
+
+#container {
+    background-color:#E4DCCF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 40px;
+    color: #1A4D2E;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #7D9D9C;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.inputField {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+label {
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    width: 100%;
+}
+
+.discountField {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+#addDiscount {
+    background-color:#7D9D9C;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    flex: 1;
+    cursor: pointer;
+
+}
+
+#btn {
+    background-color: #576F72;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.discount {
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+    padding: 10px;
+    flex: 1;
+}
+
+.showDiscount {
+    display: block;
+    margin-left: 20px;
+}
+
+
+#showTotalAmountToPay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7D9D9C;
+    width: 100%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-top: 10px;
+}
+
+.amountBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.currency {
+    margin-left: 10px;
+}
+
+.dividedSum {
+    margin-right: 10px;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+#totalAmount {
+    background-color: #576F72;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+@media all and (max-width: 800px) {
+    #container {
+        width: 70%;
+    }
+
+    form {
+        width: 90%;
+        margin: 0px;
+        padding: 10px;
+    }
+    
+    .inputField {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    
+    label {
+        font-size: 15px;
+    }
+    
+    input {
+        font-size: 12px;
+    }
+    
+    #addDiscount {
+        font-size: 15px;
+    }
+    
+    .amountBlock {
+        font-size: 15px;
+    }
+
+    #btn {
+        font-size: 18px;
+    }
+}
+
+    @media all and (max-width: 500px) {
+        #container {
+            width: 90%;
+        }
+    
+        label {
+            font-size: 12px;
+        }
+        
+        input {
+            font-size: 10px;
+        }
+        
+        #addDiscount {
+            font-size: 12px;
+        }
+        
+        .amountBlock {
+            font-size: 12px;
+        }
+
+        .discountField {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #addDiscount {
+            margin-bottom: 5px;
+        }
+
+        .discount {
+            padding: 5px;
+            font-size: 12px;
+            margin-left: 0;
+        }
+    }
